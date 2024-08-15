@@ -1,25 +1,25 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React from "react";
+import { NavLink } from "react-router-dom";
 
-export default function SideNav2() {
+export default function SideNav2({ setActive }) {
   return (
     <div>
-        <ul className="menu rounded-box border h-screen bg-white w-56 text-black">
-            <li>
-                <h2 className="menu-title text-black">Data Permohonan</h2>
-                <ul>
-                    <NavLink to='/detailPermohonan'>
-                        <li><a>Data Pemohon</a></li>
-                    </NavLink>
-                    <NavLink to='/dataIntansi'>
-                        <li><a>Data Intansi</a></li>
-                    </NavLink>
-                    <NavLink to='/dataAcara'>
-                        <li><a>Data Acara</a></li>
-                    </NavLink>
-                </ul>
+      <ul className="menu  border h-screen bg-green-700 text-white w-56 ">
+        <li>
+          <h2 className="menu-title text-white">Data Permohonan</h2>
+          <ul>
+            <li onClick={() => setActive("dataPemohon")}>
+              <a>Data Pemohon</a>
             </li>
-        </ul>
+            <li onClick={() => setActive("dataIntansi")}>
+              <a>Data Intansi</a>
+            </li>
+            <li onClick={() => setActive("dataAcara")}>
+              <a>Data Acara</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  )
+  );
 }
