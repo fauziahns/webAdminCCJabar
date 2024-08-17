@@ -129,7 +129,7 @@ export default function Permohonan2() {
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-200">
+                <tr className="text-black text-center bg-blue-100">
                   <th>No Permohonan</th>
                   <th>Status</th>
                   <th>Pemohon</th>

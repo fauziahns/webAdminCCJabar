@@ -56,7 +56,7 @@ export default function AD() {
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-200">
+                <tr className="text-black text-center bg-blue-100">
                   <th>No Permohonan</th>
                   <th>Status</th>
                   <th>Pemohon</th>
@@ -92,7 +92,7 @@ export default function AD() {
                       >
                         <td>
                           <p
-                            className={`font-bold p-1 text-sm text-center rounded-sm ${
+                            className={`font-bold p-1 text-sm text-center rounded-lg ${
                               item.admin_status === "Diterima" && "bg-green-300"
                             } ${
                               item.admin_status === "Baru" && "bg-slate-100"

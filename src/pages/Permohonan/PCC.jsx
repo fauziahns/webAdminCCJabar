@@ -51,11 +51,11 @@ export default function PCC() {
             </p>
           </div>
           <CetakPermohonanAdmin2 data={data} />
-          <div className="  bg-white mx-10 p-5 text-black  mt-10 w-auto">
+          <div className="  bg-white mx-10  text-black  mt-10 w-auto">
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-200">
+                <tr className="text-black text-center bg-blue-100">
                   <th>No Permohonan</th>
                   <th>Status</th>
                   <th>Pemohon</th>
@@ -89,9 +89,9 @@ export default function PCC() {
                         }`}
                         state={item}
                       >
-                        <td>
+                        <td className="flex justify-center items-center align-middle">
                           <p
-                            className={`font-bold p-1 text-sm text-center rounded-sm ${
+                            className={`font-bold p-1 rounded-lg text-sm text-center ${
                               item.admin_status === "Diterima" && "bg-green-300"
                             } ${
                               item.admin_status === "Baru" && "bg-slate-100"
@@ -111,7 +111,7 @@ export default function PCC() {
                       <td className="text-center">{ruangan}</td>
                       <td>{convertStringify(item.acara).jenisAcara}</td>
                       <td>{convertStringify(item.acara).subsektorAcara}</td>
-                      <td>{convertStringify(item.acara).jumlahPeserta}</td>
+                      {/* <td>{convertStringify(item.acara).jumlahPeserta}</td> */}
                       <td>{getValues(peserta).join(", ")}</td>
                     </tr>
                   );

@@ -57,7 +57,7 @@ export default function Laporan() {
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-200">
+                <tr className="text-black text-center bg-blue-100">
                   <th>No Permohonan</th>
                   <th>Nama Pemohon</th>
                   <th>Nama Acara</th>
@@ -65,6 +65,7 @@ export default function Laporan() {
                   <th>Tanggal Acara</th>
                   <th>Jumlah Peserta</th>
                   <th>Rangkuman Acara</th>
+                  <th>Foto Laporan</th>
                 </tr>
               </thead>
               <tbody>
@@ -88,6 +89,15 @@ export default function Laporan() {
                       <td>{dataAcara.tanggalMulaiAcara}</td>
                       <td>{peserta}</td>
                       <td className="text-justify">{item.rangkuman_acara}</td>
+                      <td className="uderline cursor-pointer">
+                          <a
+                            href={item.foto_laporan}
+                            target="_blank"
+                            className="underline"
+                          >
+                            Lihat Foto
+                          </a>
+                      </td>
                     </tr>
                   );
                 })}
