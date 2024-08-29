@@ -55,7 +55,7 @@ export default function LaporanAD() {
           </div>
 
           <div className=" bg-white mx-10 text-black my-10 p-5  ">
-            <table className="table">
+          <table className="table">
               {/* head */}
               <thead>
                 <tr className="text-black text-center bg-slate-200">
@@ -66,9 +66,11 @@ export default function LaporanAD() {
                   <th>Tanggal Acara</th>
                   <th>Jumlah Peserta</th>
                   <th>Rangkuman Acara</th>
+                  <th>Foto Laporan</th>
                 </tr>
               </thead>
               <tbody>
+                {/* row 1 */}
                 {data.map((item) => {
                   const { pemohon, acara } = item;
 
@@ -80,7 +82,7 @@ export default function LaporanAD() {
                   ).join(", ");
 
                   return (
-                    <tr key={item.id} className="text-center border-b-2">
+                    <tr className="text-center border-b-2" key={item.id}>
                       <td>{item.id}</td>
                       <td>{dataPemohon.namaPemohon}</td>
                       <td>{dataAcara.namaAcara}</td>
@@ -88,6 +90,15 @@ export default function LaporanAD() {
                       <td>{dataAcara.tanggalMulaiAcara}</td>
                       <td>{peserta}</td>
                       <td className="text-justify">{item.rangkuman_acara}</td>
+                      <td className="uderline cursor-pointer">
+                          <a
+                            href={item.foto_laporan}
+                            target="_blank"
+                            className="underline"
+                          >
+                            Lihat Foto
+                          </a>
+                      </td>
                     </tr>
                   );
                 })}
