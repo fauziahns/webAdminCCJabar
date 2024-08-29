@@ -42,7 +42,7 @@ export default function Laporan() {
 
   return (
     <div>
-      <div className="flex bg-white">
+      <div className="flex h-screen bg-white">
         <SideNav />
         <div className="overflow-x-auto">
           <div className=" mx-10 mt-10 text-black">
@@ -57,7 +57,7 @@ export default function Laporan() {
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-100">
+                <tr className="text-black text-center bg-slate-200">
                   <th>No Permohonan</th>
                   <th>Nama Pemohon</th>
                   <th>Nama Acara</th>

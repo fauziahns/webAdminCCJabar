@@ -129,7 +129,7 @@ export default function Permohonan2() {
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-100">
+                <tr className="text-black text-center bg-slate-200">
                   <th>No Permohonan</th>
                   <th>Status</th>
                   <th>Pemohon</th>
@@ -158,13 +158,16 @@ export default function Permohonan2() {
                         <div
                           className={`font-bold p-1 text-sm text-center self-center ${
                             item.admin_utama_status === "Diterima" &&
-                            "bg-green-200"
+                            "bg-green-200 rounded-md p-2"
                           } ${
                             item.admin_utama_status === "Disetujui" &&
-                            "bg-green-500"
+                            "bg-green-500 rounded-md p-2"
                           } ${
                             item.admin_utama_status === "Ditolak" ||
-                            (item.admin_status === "Ditolak" && "bg-red-200")
+                            (item.admin_status === "Ditolak" && "bg-red-200 rounded-md p-2")
+                          } ${
+                            item.admin_utama_status === "Dibatalkan" ||
+                            (item.admin_status === "Dibatalkan" && "bg-red-400 rounded-md p-2")
                           }`}
                         >
                           {item.admin_utama_status ?? item.admin_status}

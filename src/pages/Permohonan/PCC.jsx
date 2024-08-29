@@ -42,7 +42,7 @@ export default function PCC() {
 
   return (
     <div>
-      <div className="flex bg-slate-50">
+      <div className="flex h-full bg-slate-50">
         <SideNav />
         <div className="overflow-x-auto">
           <div className="flex mx-10 mt-10">
@@ -55,7 +55,7 @@ export default function PCC() {
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-100">
+                <tr className="text-black text-center bg-slate-50">
                   <th>No Permohonan</th>
                   <th>Status</th>
                   <th>Pemohon</th>

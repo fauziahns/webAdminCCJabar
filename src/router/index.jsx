@@ -23,6 +23,7 @@ import TambahLaporan from "../pages/Admin 3/TambahLaporan";
 import Login from "../pages/LogIn/Login";
 import PrivateRoute from "../components/private-route/PrivateRoute";
 import PrivateRouteAuth from "../components/private-route/PrivateRouteAuth";
+import LaporanDitolak from "../pages/Laporan Kerusakan/LaporanDitolak";
 
 const Router = () => {
   return (
@@ -51,6 +52,7 @@ const Router = () => {
             <Route path="/laporanAkhirPCC" Component={LaporanPCC} />
             <Route path="/laporanAkhirAD" Component={LaporanAD} />
             <Route path="/laporanKerusakan" Component={LaporanKerusakan} />
+            <Route path="/laporanDitolak" Component={LaporanDitolak}/>
             <Route
               path="/laporanKerusakanPCC"
               Component={LaporanKerusakanPCC}

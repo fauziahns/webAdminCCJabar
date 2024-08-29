@@ -58,7 +58,7 @@ export default function Permohonan() {
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-100">
+                <tr className="text-black text-center bg-slate-200">
                   <th>No Permohonan</th>
                   <th>Status</th>
                   <th>Pemohon</th>
@@ -96,11 +96,11 @@ export default function Permohonan() {
                         <td>
                           <p
                             className={`font-semibold p-1 text-sm text-center rounded-lg ${
-                              item.admin_status === "Diterima" && "bg-green-300"
+                              item.admin_status === "Diterima" && "bg-green-300 rounded-md p-2"
                             } ${
-                              item.admin_status === "Baru" && "bg-slate-100"
+                              item.admin_status === "Baru" && "bg-slate-100 rounded-md p-2"
                             } ${
-                              item.admin_status === "Ditolak" && "bg-red-400"
+                              item.admin_status === "Ditolak" && "bg-red-400 rounded-md p-2"
                             }  w-24`}
                           >
                             {item.admin_status}

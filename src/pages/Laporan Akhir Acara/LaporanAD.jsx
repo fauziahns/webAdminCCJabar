@@ -42,7 +42,7 @@ export default function LaporanAD() {
 
   return (
     <div>
-      <div className="flex bg-white w-full">
+      <div className="flex h-screen bg-white w-full">
         <SideNav />
         <div className="overflow-x-auto">
           <div className=" mx-10 mt-10 text-black">
@@ -58,7 +58,7 @@ export default function LaporanAD() {
             <table className="table">
               {/* head */}
               <thead>
-                <tr className="text-black text-center bg-blue-200">
+                <tr className="text-black text-center bg-slate-200">
                   <th>No Permohonan</th>
                   <th>Nama Pemohon</th>
                   <th>Nama Acara</th>

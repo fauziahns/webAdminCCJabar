@@ -144,16 +144,16 @@ export default function LaporanKerusakanAD() {
                         <p
                           className={`py-2 font-semibold text-sm ${
                             item.admin_utama_status === "Belum Bayar" &&
-                            "bg-red-300"
+                            "bg-red-300 rounded-md p-2"
                           } ${
                             item.admin_utama_status === "Sudah Bayar" &&
-                            "bg-green-300"
+                            "bg-green-300 rounded-md p-2"
                           } ${
                             item.admin_utama_status === "Terkonfirmasi" &&
-                            "bg-green-500"
+                            "bg-green-500 rounded-md p-2"
                           } ${
                             item.admin_utama_status === "Pembayaran Ditolak" &&
-                            "bg-red-400"
+                            "bg-red-400 rounded-md p-2"
                           } rounded-lg`}
                         >
                           {item.admin_utama_status}

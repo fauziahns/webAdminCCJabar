@@ -23,7 +23,7 @@ export default function SideNav() {
   console.log(type);
   return (
     <div>
-      <div className="sidenav flex flex-col justify-between bg-green-700 text-white w-56 h-screen  drop-shadow-md">
+      <div className="sidenav flex flex-col justify-between bg-green-700 text-white w-56 h-full  drop-shadow-md">
         <div className="">
           <p className="text-sm my-5 mx-7">MAIN MENU</p>
           <ul className="menu rounded-box ">
